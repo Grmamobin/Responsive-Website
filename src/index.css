@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: spaceGrotesk;
+  src: url("src/assets/fonts/SpaceGrotesk-Medium-BF65712b4fd0ef9.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: spaceGrotesk;
+  src: url("src/assets/fonts/SpaceGrotesk-Bold-BF65712b4f9ac68.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: spaceGrotesk;
+  src: url("src/assets/fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+.whole-page {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  padding: 0px 100px 0px 100px;
+  margin-top: 60px;
+}
+* {
+  font-family: spaceGrotesk;
+  font-weight: 700;
+}
+ul {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+@media screen and (max-width: 430px) {
+  body {
+    padding: 0px 20px;
+  }
+}

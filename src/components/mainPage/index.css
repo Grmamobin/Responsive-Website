@@ -1,0 +1,27 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slide-swap {
+  animation: 10s slide infinite linear;
+}
+.slide-swap-reverse {
+  animation: 10s slide-reverse infinite linear;
+}
+.slide-swap img,
+.slide-swap-reverse img {
+  margin: 0 40px;
+}
