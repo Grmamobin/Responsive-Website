@@ -4,7 +4,7 @@ import Services from '../services';
 import CaseStudies from '../caseStudies';
 import InProcess from '../inProcess';
 import Team from '../team';
-import Testimonials from '../testimonials';
+// import Testimonials from '../testimonials';
 import CotactUs from '../contactUs';
 import Footer from '../footer/footer';
 export default function WholePage(){

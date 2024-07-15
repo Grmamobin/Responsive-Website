@@ -21,11 +21,10 @@
   font-weight: 700;
 }
 
-.whole-page {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  padding: 0px 100px 0px 100px;
+body {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 0px 100px;
   margin-top: 60px;
 }
 * {
@@ -41,8 +40,9 @@ li a {
 button {
   cursor: pointer;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1250px) {
   body {
-    padding: 0px 20px;
+    margin-top: 30px;
+    padding: 0px 0px;
   }
 }

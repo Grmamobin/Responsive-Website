@@ -7,7 +7,7 @@ export default function CotactUs(){
     });
     return(
     <>
-    <div className='flex justify-center items-center w-[800px] pb-[85px] text-lg gap-[45px]'>
+    <div className='flex flex-col sm:flex-row justify-center items-center pb-[85px] text-lg gap-[45px]'>
         <img className='w-[241px]' src="src/assets/images/Heading (3).svg" alt="" />
         <p className='text-[18px]'>Connect with Us: Lets Discuss Your Digital Marketing Needs</p>
     </div> 
@@ -50,10 +50,6 @@ export default function CotactUs(){
             <img className='w-[400.859px] h-[648px] ml-auto ' src="src/assets/images/Screenshot 2024-07-13 at 16.54.19.png" alt="" />
 
     </div>
-    
-
-
-    
 
     </>
     )

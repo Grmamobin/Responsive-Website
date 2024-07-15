@@ -6,13 +6,13 @@ export default function MainPage(){
     return(
         
     <>
-    <header className='sm:justify-between items-center sm:flex sm:flex-row pb-[70px] gap-[222px] inline-flex max-w-full w-full'>
+    <header className='sm:justify-between items-center sm:flex sm:flex-row pb-[70px] gap-[222px] inline-flex pr-[20px]'>
         <div className='header-left flex justify-center items-center sm:gap-[12.92px] gap-[8.475px] w-[144px] h-[23.613px]'>
             <img className='sm:w-[36px] sm:h-[36px] w-[23.613px] h-[23.613px]' src="src/assets/images/Icon.svg" alt="icon" />
             <img className='sm:w-[170.617px] sm:h-[28.56px] w-[111.912px] h-[18.733px]' src="src/assets/images/Positivus.svg" alt="positive" />
         </div>
         <nav className='header-right'>
-            <ul className='hidden sm:flex flex-row justify-center items-center gap-[40px]'>
+            <ul className='hidden sm:flex flex-row justify-center items-center gap-[40px] '>
                 <li>
                     <a href="#">About us</a>
                 </li>
