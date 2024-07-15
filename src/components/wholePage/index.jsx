@@ -17,7 +17,7 @@ export default function WholePage(){
         <section className="inProcess pt-[100px]"><InProcess/></section>
         <section className="team pt-[100px]"><Team/></section>
         {/* <section className="testimonials pt-[100px]"><Testimonials/></section>   STILL HAS BUG */}
-        <section className="contactUs pt-[100px]"><CotactUs/></section>
+        <section className="contactUs pt-[100px] px-[20px] "><CotactUs/></section>
         <section className="footer pt-[100px]"><Footer/></section>
     </div>
     </>
