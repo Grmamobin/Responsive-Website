@@ -11,7 +11,7 @@ export default function WholePage(){
     return(
     <>
     <div className='whole-page'>
-        <div className="mainPage"><MainPage/></div>
+        <div className="mainPage px-[20px]"><MainPage/></div>
         <section className="services pt-[100px] px-[20px]"><Services/></section>
         <section className="caseStudies px-[20px] pt-[100px] overflow-hidden"><CaseStudies/></section>
         <section className="inProcess pt-[100px] px-[20px]"><InProcess/></section>

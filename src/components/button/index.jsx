@@ -8,8 +8,8 @@ export default function Button({title , bgColor , borderColor , text , width , j
     );
 }
 Button.propTypes = {
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    text: PropTypes.string,
     bgColor: PropTypes.string,
     borderColor: PropTypes.string,
     width: PropTypes.string,

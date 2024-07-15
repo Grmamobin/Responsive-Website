@@ -6,7 +6,7 @@ export default function Footer(){
 
     <div className='lg:flex inline-flex lg:pt-[55px] lg:px-[60px] lg:pb-[50px] pt-[50px] px-[20px] pb-[30px] flex-col items-center lg:items-start lg:gap-[50px] gap-[37px] border lg:rounded-t-[45px] bg-[var(--Dark,#191A23)] text-white w-full lg:flex-col'>
         <div className='flex flex-col lg:gap-[66px] gap-[37px] flex-wrap'>
-            <div className='flex w-ful items-center lg:gap-[155px] lg:flex-row flex-col gap-[37px]'>
+            <div className='flex w-full items-center lg:gap-[155px] lg:flex-row flex-col gap-[37px]'>
                 <div className='flex gap-[10.29px]'>
                     <img className='w-[29.517px] h-[29px] flex-shrink' src="src/assets/images/Icon (4).svg" alt=""/>
                     <img  className='w-[139.89px] h-[23.007px] flex-shrink' src="src/assets/images/Positivus (2).svg" alt="" />
