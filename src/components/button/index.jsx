@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export default function Button({title , bgColor , borderColor , text , width , justify , self_width}){
     return(
     <>
-    <button className={`flex py-[20px] px-[35px] items-start gap-[10px] border rounded-[14px] bg-[${bgColor}] border-[${borderColor}] text-${text} w-[${width}] ${justify}  ${self_width}`}>{title}</button>
+    <button className={`flex py-[20px] px-[35px] items-start gap-[10px] border rounded-[14px] bg-[${bgColor}] border-[${borderColor}] text-${text} lg:w-[${width}] ${justify}  ${self_width}`}>{title}</button>
     </>
     );
 }
