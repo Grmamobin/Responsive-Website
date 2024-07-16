@@ -7,7 +7,7 @@ export default function CotactUs(){
     });
     return(
     <>
-    <div className='lg:flex inline-flex flex-col lg:flex-row items-center pb-[40px] lg:pb-[85px] text-lg lg:gap-[45px] gap-[30px]'>
+    <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
         <img className='w-[241px]' src="src/assets/images/Heading (3).svg" alt="" />
         <p className='text-[18px] text-center'>Connect with Us: Lets Discuss Your Digital Marketing Needs</p>
     </div> 

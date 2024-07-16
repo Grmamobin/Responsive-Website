@@ -38,7 +38,7 @@ export default function InProcess() {
   ];
   return (
     <>
-    <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col sm:flex-row'>
+    <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
         <img className='w-[398px]' src="src/assets/images/Heading (7).svg" alt="" />
         <p className='text-[18px] text-center'>Step-by-Step Guide to Achieving Your Business Goals</p>
     </div> 

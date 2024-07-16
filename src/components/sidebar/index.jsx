@@ -1,6 +1,10 @@
 import React from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 export default function Sidebar({isOpen , setIsOpen}){
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+    }, [isOpen]);
     return(
         <>
         <div className='lg:hidden bg-black/50 fixed flex justify-end bottom-0 top-0 left-0 right-0' style={{visibility: isOpen ? "visible" : "hidden"}}>
