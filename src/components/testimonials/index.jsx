@@ -4,20 +4,27 @@ import { useRef } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './index.css';
+
+import bubble from '.././../assets/images/Bubble.svg'
+import mainHead from '.././../assets/images/Label (1).svg'
+import leftArrow from '.././../assets/images/Arrow left.svg'
+import rightArrow from '.././../assets/images/Arrow right.svg'
+import stars from '.././../assets/images/Navigation stars.svg'
+
 export default function Testimonials(){
     const data = [
         {
-            image:"src/assets/images/Bubble.svg",
+            image:bubble,
             name:"John Smith",
             info:"Marketing Director at XYZ Corp"
         },
         {
-            image:"src/assets/images/Bubble.svg",
+            image:bubble,
             name:"John Smith",
             info:"Marketing Director at XYZ Corp"
         },
         {
-            image:"src/assets/images/Bubble.svg",
+            image:bubble,
             name:"John Smith",
             info:"Marketing Director at XYZ Corp"
         },
@@ -49,7 +56,7 @@ export default function Testimonials(){
     return(
         <div>
         <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-            <img className='w-[241px]' src="src/assets/images/Label (1).svg" alt="" />
+            <img className='w-[241px]' src={mainHead} alt="" />
             <p className='text-[18px] text-center'>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
         </div>
             <div className='pt-[84px] pb-[68px] border rounded-[45px] bg-[var(--Dark,#191A23)] lg:block hidden'>
@@ -71,9 +78,9 @@ export default function Testimonials(){
                 ))}
                 </Slider>
                 <div className='flex w-[564px] justify-between items-center pt-[125px] m-auto'>
-                    <img src="src/assets/images/Arrow left.svg" onClick={previous} alt="" />
-                    <img src="src/assets/images/Navigation stars.svg" alt="" />
-                    <img src="src/assets/images/Arrow right.svg" onClick={next} alt="" />
+                    <img src={leftArrow} onClick={previous} alt="" />
+                    <img src={stars} alt="" />
+                    <img src={rightArrow} onClick={next} alt="" />
                 </div>  
             </div>
 
@@ -97,9 +104,9 @@ export default function Testimonials(){
                 ))}
                 </Slider>
                 <div className='flex justify-between items-center pt-[125px] px-[20px]'>
-                    <img src="src/assets/images/Arrow left.svg" onClick={previous} alt="" />
-                    <img src="src/assets/images/Navigation stars.svg" alt="" />
-                    <img src="src/assets/images/Arrow right.svg" onClick={next} alt="" />
+                    <img src={leftArrow} onClick={previous} alt="" />
+                    <img src={stars} alt="" />
+                    <img src={rightArrow} onClick={next} alt="" />
                 </div> 
             </div>
 

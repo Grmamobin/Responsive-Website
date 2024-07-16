@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import Button from '../button';
+
+import mainHead from '../../assets/images/Heading (3).svg'
+import radioBtn from '../../assets/images/Radiobutton.svg'
+import img from '../../assets/images/Screenshot 2024-07-13 at 16.54.19.png'
 export default function CotactUs(){
     const [radioButton , setRadioButton] = useState({
         1: false,
@@ -8,7 +12,7 @@ export default function CotactUs(){
     return(
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-        <img className='w-[241px]' src="src/assets/images/Heading (3).svg" alt="" />
+        <img className='w-[241px]' src={mainHead} alt="" />
         <p className='text-[18px] text-center'>Connect with Us: Lets Discuss Your Digital Marketing Needs</p>
     </div> 
 
@@ -18,14 +22,14 @@ export default function CotactUs(){
                 <div className='flex gap-[14px]'>
                     <div >
                         <div className='w-[28px] h-[28px] border rounded-[29px] bg-white border-black' style={{display: radioButton[2]? "none" : "flex"}} onClick={()=>{setRadioButton({1: false, 2: true})}}></div>
-                        <img style={{display: radioButton[2]? "flex" : "none"}} onClick={()=>{setRadioButton({1: false, 2: true})}} className='w-[28px] h-[28px]' src="src/assets/images/Radiobutton.svg" alt="" />
+                        <img style={{display: radioButton[2]? "flex" : "none"}} onClick={()=>{setRadioButton({1: false, 2: true})}} className='w-[28px] h-[28px]' src={radioBtn} alt="" />
                     </div>
                     <p>Say Hi</p>
                 </div>
                 <div className='flex gap-[14px]'>
                 <div>
                         <div className='w-[28px] h-[28px] border rounded-[29px] bg-white border-black' style={{display: radioButton[1]? "none" : "flex"}} onClick={()=>{setRadioButton({1: true, 2: false})}}></div>
-                        <img style={{display: radioButton[1]? "flex" : "none"}} onClick={()=>{setRadioButton({1: true, 2: false})}} className='w-[28px] h-[28px]' src="src/assets/images/Radiobutton.svg" alt="" />
+                        <img style={{display: radioButton[1]? "flex" : "none"}} onClick={()=>{setRadioButton({1: true, 2: false})}} className='w-[28px] h-[28px]' src={radioBtn} alt="" />
                     </div>
                     <p>Get a Quote</p>
                 </div>
@@ -47,7 +51,7 @@ export default function CotactUs(){
             <Button title='Send Message' bgColor='var(--Dark,#191A23)' text='white' justify='justify-center' borderColor='none' self_width='w-full'></Button>
         </div>
 
-            <img className='w-[400.859px] h-[648px] ml-auto lg:block hidden object-contain' src="src/assets/images/Screenshot 2024-07-13 at 16.54.19.png" alt="" />
+            <img className='w-[400.859px] h-[648px] ml-auto lg:block hidden object-contain' src={img} alt="" />
 
     </div>
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css';
+import mainHead from  './../../assets/images/Heading (6).svg';
+import blackArrow from './../../assets/images/blackArrow.svg';
 export default function CaseStudies(){
   const case_studies =  [
     {
@@ -18,7 +20,7 @@ export default function CaseStudies(){
     return(
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-        <img className='w-[251px]' src="src/assets/images/Heading (6).svg" alt="" />
+        <img className='w-[251px]' src={mainHead} alt="" />
         <p className='text-[18px] text-center'>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
     </div>
 
@@ -38,7 +40,7 @@ export default function CaseStudies(){
                         </a>
                     </li>
                 </ul>
-                <img src="src/assets/images/blackArrow.svg" alt="" />
+                <img src={blackArrow} alt="" />
                 </div>
               </div>
               <div className={`${part.count < 3 ? 'border border-white' : 'hidden'} lg:block hidden`}></div>
@@ -64,7 +66,7 @@ export default function CaseStudies(){
                   </a>
               </li>
           </ul>
-          <img src="src/assets/images/blackArrow.svg" alt="" />
+          <img src={blackArrow} alt="" />
         </div>
     </div>
     )})}

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'; 
+import icon from '../../assets/images/Social icon.svg'
 export default function TeamCard({name , job , info , pic }){
     return(
     <>
@@ -11,7 +12,7 @@ export default function TeamCard({name , job , info , pic }){
                 <h4 className='font-spaceGrotesk font-medium text-[20px]'>{name}</h4>
                 <p>{job}r</p>
             </div>
-            <img className='self-start' src="src/assets/images/Social icon.svg" alt="" />
+            <img className='self-start' src={icon} alt="" />
         </div>
 
         <div className='border border-black w-full'></div>

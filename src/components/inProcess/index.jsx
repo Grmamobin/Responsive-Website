@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import mainHead from './../../assets/images/Heading (7).svg';
+import sub from './../../assets/images/Plus icon.svg';
+import plus from './../../assets/images/Plus.svg';
 export default function InProcess() {
   const [clicked, setClicked] = useState({
     1: false,
@@ -39,12 +41,12 @@ export default function InProcess() {
   return (
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-        <img className='w-[398px]' src="src/assets/images/Heading (7).svg" alt="" />
+        <img className='w-[398px]' src={mainHead} alt="" />
         <p className='text-[18px] text-center'>Step-by-Step Guide to Achieving Your Business Goals</p>
     </div> 
   <div className='w-full flex flex-col gap-[20px]'>
       {working_process.map((part) => {
-        const imageSource = clicked[part.count] ? "src/assets/images/Plus icon.svg" : "src/assets/images/Plus.svg";
+        const imageSource = clicked[part.count] ? sub : plus;
         return (
           <div className='gap-[30px]' key={part.info}>
             <div className='flex flex-col gap-[30px] w-full sm:py-[41px] sm:px-[60px] p-[30px] border rounded-[45px] border-[#191A23] bg-[var(--Green,#B9FF66)] shadow-[0px_5px_0px_0px_#191A23]' style={{backgroundColor : clicked[part.count]? "#B9FF66" : "#F3F3F3"}}>

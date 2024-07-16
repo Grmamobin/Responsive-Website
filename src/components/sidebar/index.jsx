@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import close from '../../assets/images/icon-close.svg'
 export default function Sidebar({isOpen , setIsOpen}){
     useEffect(() => {
         document.body.style.overflow = isOpen ? 'hidden' : 'auto';
@@ -10,7 +11,7 @@ export default function Sidebar({isOpen , setIsOpen}){
         <div className='lg:hidden bg-black/50 fixed flex justify-end bottom-0 top-0 left-0 right-0' style={{visibility: isOpen ? "visible" : "hidden"}}>
         <aside className='w-[200px] h-[100vh] bg-white flex flex-col'>
             <button className='flex justify-end mt-[40px] mb-[40px] px-[20px]' onClick={()=>{setIsOpen(false)}}>
-                <img src="src/assets/images/icon-close.svg" alt="closeBtn" />
+                <img src={close} alt="closeBtn" />
             </button>
         <nav>
             <ul className='flex flex-col items-center justify-center'>

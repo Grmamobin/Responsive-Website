@@ -19,11 +19,13 @@ import nameplace6 from './../../assets/images/tokyo-volumetric-analytics-of-diff
 import arrow_black from './../../assets/images/blackArrow.svg';
 import arrow_white from './../../assets/images/whiteArrow.svg';
 
+import Mainhead from './../../assets/images/Heading (5).svg';
+
 export default function Services(){
     return(
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-        <img className='w-[164px]' src="src/assets/images/Heading (5).svg" alt="" />
+        <img className='w-[164px]' src={Mainhead} alt="" />
         <p className='text-[18px] text-center'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
 
