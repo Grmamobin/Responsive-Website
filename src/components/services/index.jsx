@@ -20,6 +20,7 @@ import arrow_black from './../../assets/images/blackArrow.svg';
 import arrow_white from './../../assets/images/whiteArrow.svg';
 
 import Mainhead from './../../assets/images/Heading (5).svg';
+import img_label from './../../assets/images/Frame 19.png';
 
 export default function Services(){
     return(
@@ -61,7 +62,7 @@ export default function Services(){
         </div>
 
         <div className='right-part hidden lg:flex'>
-            <img className='h-[394px] w-[1000px]'  src="src/assets/images/Frame 19.png" alt="" />
+            <img className='h-[394px] w-[1000px]'  src={img_label} alt="" />
         </div>
 
     </div>
