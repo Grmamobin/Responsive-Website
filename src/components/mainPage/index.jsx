@@ -1,8 +1,8 @@
-import { React , useState} from 'react';
-import './index.css';
+import React from 'react';
+import { useState} from 'react';
 import Sidebar from '../sidebar';
+import './index.css';
 import Button from '../button';
-
 export default function MainPage(){
     const [isOpen , setIsopen] = useState(false)
     return(
@@ -43,7 +43,7 @@ export default function MainPage(){
         <div className="middle-left">
             <h1 className='lg:text-6xl text-5xl lg:w-[531px] w-full'>Navigating the digital landscape for success</h1>
             <div className="middle-right flex lg:hidden">
-                <img className='mainImg lg:w-85 lg:h-85 gap-[10px] w-full'  src={"public/static/images/Screenshot 2024-07-09 at 12.01.47.png"} alt="" />
+                <img className='mainImg lg:w-85 lg:h-85 gap-[10px] w-full'  src="src/assets/images/Screenshot 2024-07-09 at 12.01.47.png" alt="" />
             </div>
             <p className='w-full text-lg pt-[35px]'>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
             <div className='pt-[35px] flex justify-center items-center lg:items-start lg:justify-start lg:pb-[70px]'>
@@ -51,7 +51,7 @@ export default function MainPage(){
             </div>
         </div>
         <div className="middle-right lg:flex hidden w-full">
-            <img className='mainImg w-full'  src={"public/static/images/Screenshot 2024-07-09 at 12.01.47.png"} alt="" />
+            <img className='mainImg w-full'  src="src/assets/images/Screenshot 2024-07-09 at 12.01.47.png" alt="" />
         </div>
     </section>
     <div className='whole-swap hidden lg:flex justify-between overflow-hidden pt-6'>
