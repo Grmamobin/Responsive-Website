@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Button from '../button';
+import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 
 import mainHead from '../../assets/images/Heading (3).svg'
 import radioBtn from '../../assets/images/Radiobutton.svg'
 import img from '../../assets/images/Screenshot 2024-07-13 at 16.54.19.png'
+
 export default function CotactUs(){
     const [radioButton , setRadioButton] = useState({
         1: false,
@@ -45,7 +47,12 @@ export default function CotactUs(){
                 </div>
                 <div className='flex flex-col items-start gap-[5px] h-[223px]'>
                     <p>Message*</p>
-                    <input className='flex w-full h-[190px] py-[18px] px-[30px] items-start gap-[10px] flex-shrink-0 border rounded-[14px] bg-white border-[#000]' type="Message"  placeholder='Message' />
+                       <TextareaAutosize className='flex w-full h-[190px] py-[18px] px-[30px] items-start gap-[10px] flex-shrink-0 border rounded-[14px] bg-white border-[#000]'
+                        aria-label="empty textarea"
+                        minRows={6}
+                        maxRows={6}
+                        placeholder="Message"
+                        />
                 </div>
             </div>
             <Button title='Send Message' bgColor='var(--Dark,#191A23)' text='white' justify='justify-center' borderColor='none' self_width='w-full'></Button>
