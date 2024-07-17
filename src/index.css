@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: spaceGrotesk;
-  src: url("src/assets/fonts/SpaceGrotesk-Medium-BF65712b4fd0ef9.ttf");
+  src: url("../src/assets/fonts/SpaceGrotesk-Medium-BF65712b4fd0ef9.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: spaceGrotesk;
-  src: url("src/assets/fonts/SpaceGrotesk-Bold-BF65712b4f9ac68.ttf");
+  src: url("../src/assets/fonts/SpaceGrotesk-Bold-BF65712b4f9ac68.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: spaceGrotesk;
-  src: url("src/assets/fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf");
+  src: url("../src/assets/fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf");
   font-style: normal;
   font-weight: 700;
 }
