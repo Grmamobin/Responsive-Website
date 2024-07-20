@@ -1,7 +1,10 @@
 import React from 'react';
-import './index.css';
 import mainHead from  './../../assets/images/Heading (6).svg';
 import blackArrow from './../../assets/images/blackArrow.svg';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import './index.css'
 export default function CaseStudies(){
   const case_studies =  [
     {
@@ -17,11 +20,21 @@ export default function CaseStudies(){
       count:3
     },
   ];
+  const settings = {
+    dots: false,
+    infinite: false,
+    centerMode: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    initialSlide: 0,
+    arrows: false
+};
     return(
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-        <img className='w-[251px]' src={mainHead} alt="" />
-        <p className='text-[18px] text-center'>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+        <img className='w-[251px] h-[51px]' src={mainHead} alt="" />
+        <p className='text-[18px] text-center lg:text-left lg:w-[580px]'>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
     </div>
 
     <div className='hidden lg:flex items-start gap-[64px] border rounded-[45px] bg-[var(--Dark,#191A23)] py-[70px] px-[60px] w-full'>
@@ -43,8 +56,7 @@ export default function CaseStudies(){
                 <img src={blackArrow} alt="" />
                 </div>
               </div>
-              <div className={`${part.count < 3 ? 'border border-white' : 'hidden'} lg:block hidden`}></div>
-
+              <hr className={`${part.count < 3 ? 'bg-white w-[1px] h-[186px] ' : 'hidden'} lg:block hidden`}/>
               </div>
               
               )
@@ -52,13 +64,15 @@ export default function CaseStudies(){
     )}
     </div>
 
-    <div className='swap flex lg:hidden gap-[20px]'>
-
-    {case_studies.map((parts) =>{
-      return(
-    <div className='flex flex-col py-[42px] px-[50px] items-start gap-[20px] border rounded-[45px] bg-[var(--Dark,#191A23)] text-white w-[350px]' key={parts.info}>
+  
+    <Slider
+    {...settings}
+     className=' lg:hidden h-[300px]'>
+    {case_studies.map((parts) =>(
+      <div className='swap flex flex-col lg:hidden gap-[20px]' key={parts.info}>
+    <div className='flex flex-col py-[42px] px-[50px] items-start gap-[20px] border rounded-[45px] bg-[var(--Dark,#191A23)] text-white w-[350px]' >
       <div>{parts.info}</div>
-      <div className='flex items-center justify-center gap-[15px] w-[250px]'>
+      <div className='flex items-start justify-start gap-[15px] w-[250px]'>
           <ul>
               <li>
                   <a className='text-[#B9FF66]' href="#">
@@ -69,8 +83,10 @@ export default function CaseStudies(){
           <img src={blackArrow} alt="" />
         </div>
     </div>
-    )})}
     </div>
+    ))}
+    </Slider>
+    
     </>
 )
 }

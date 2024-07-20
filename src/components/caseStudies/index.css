@@ -1,11 +1,6 @@
-@keyframes roller {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.slick-slide > div {
+  margin: 0 10px;
 }
-.swap {
-  animation: 10s roller infinite linear;
+.slick-track {
+  max-height: 100px;
 }

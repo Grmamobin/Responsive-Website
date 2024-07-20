@@ -11,8 +11,8 @@ import heading from '../../assets/images/Heading (4).svg'
 export default function Footer(){
     return(
     <>
-    <div className='lg:flex inline-flex lg:pt-[55px] lg:px-[60px] lg:pb-[50px] pt-[50px] px-[20px] pb-[30px] flex-col items-center lg:items-start lg:gap-[50px] gap-[37px] border lg:rounded-t-[45px] bg-[var(--Dark,#191A23)] text-white w-full lg:flex-col'>
-        <div className='flex flex-col lg:gap-[66px] gap-[37px] flex-wrap'>
+    <div className='lg:flex inline-flex lg:pt-[55px] lg:px-[60px] lg:pb-[50px] pt-[50px] px-[20px] pb-[30px] flex-col items-center lg:gap-[50px] gap-[37px] border lg:rounded-t-[45px] bg-[var(--Dark,#191A23)] text-white w-full lg:flex-col'>
+        <div className='flex flex-col lg:gap-[66px] gap-[37px] flex-wrap '>
             <div className='flex w-full items-center lg:gap-[155px] lg:flex-row flex-col gap-[37px]'>
                 <div className='flex gap-[10.29px]'>
                     <img className='w-[29.517px] h-[29px] flex-shrink' src={icon} alt=""/>
@@ -31,7 +31,7 @@ export default function Footer(){
                     <img src={icon3} alt="" />
                 </div>
             </div>
-            <div className='flex lg:items-start items-center gap-[37px] lg:gap-[154px] lg:flex-row flex-col'>
+            <div className='flex lg:items-start items-center gap-[37px] lg:gap-[154px] lg:flex-row flex-col justify-end'>
                 <div className='flex flex-col items-center lg:items-start gap-[27px]'>
                     <img src={heading} alt="" />
                     <div className='flex flex-col items-center lg:items-start gap-[20px]'>
@@ -43,9 +43,9 @@ export default function Footer(){
                         </div>
                     </div>
                 </div>
-                <div className='flex lg:flex-row flex-col lg:py-[58px] lg:px-[40px] p-[30px] items-start gap-[20px] border rounded-[14px] bg-[#292A32] border-none text-black w-full'>
-                    <input className='flex w-full py-[22px] px-[35px] items-start gap-[10px] rounded-[14px] border border-white bg-[#292A32] text-white' type="emial" placeholder='Email' />
-                    <Button title='Subscribe to news' bgColor='var(--Green,#B9FF66)' borderColor='var(--Green,#B9FF66)' self_width='w-full' justify='justify-center'></Button>
+                <div className='flex lg:flex-row flex-col lg:py-[58px] lg:px-[40px] p-[30px] items-start gap-[20px] border rounded-[14px] bg-[#292A32] border-none text-black'>
+                    <input className='flex w-full py-[22px] px-[35px] items-start gap-[10px] rounded-[14px] border border-white bg-[#292A32] text-white' type="email" placeholder='Email' />
+                    <Button title='Subscribe to news' bgColor='var(--Green,#B9FF66)' borderColor='var(--Green,#B9FF66)' self_width='w-full border-[#B9FF66]' justify='justify-center'></Button>
                 </div>
             </div>
         </div>

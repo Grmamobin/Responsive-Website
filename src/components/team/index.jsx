@@ -12,8 +12,8 @@ export default function Team(){
     return(
     <>
     <div className='lg:flex inline-flex flex-wrap lg:justify-start items-center w-full pb-[85px] text-lg lg:gap-[45px] lg:flex-row gap-[30px] justify-center'>
-        <img className='w-[101px]' src={mainHead} alt="" />
-        <p className='text-[18px] text-center'>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+        <img className='w-[101px] h-[51px]' src={mainHead} alt="" />
+        <p className='text-[18px] text-center lg:text-left lg:w-[473px]'>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
     </div> 
     <div className='flex flex-col lg:flex-row gap-[40px]'>
         <TeamCard name='John lgith' job='CEO and Founder' info='10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy' pic={pic1}></TeamCard>

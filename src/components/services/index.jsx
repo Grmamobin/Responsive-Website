@@ -26,8 +26,8 @@ export default function Services(){
     return(
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-        <img className='w-[164px]' src={Mainhead} alt="" />
-        <p className='text-[18px] text-center'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+        <img className='w-[164px] h-[51px]' src={Mainhead} alt="" />
+        <p className='text-[18px] text-center lg:text-left lg:w-[580px]'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
 
     <div className='flex flex-col gap-[40px]'>
@@ -53,8 +53,8 @@ export default function Services(){
         </div>
     </div>
 
-    <div className='flex w-full h-[347px] pr-[60px] pl-[60px] items-center gap-[275px] border rounded-[45px] bg-[var(--Grey,#F3F3F3)] mt-[85px]'>
-        <div className='left-part flex flex-col items-start gap-[26px]'>
+    <div className='flex w-full h-[347px] lg:pr-[60px] lg:pl-[60px] items-center gap-[275px] border rounded-[45px] bg-[var(--Grey,#F3F3F3)] mt-[85px] '>
+        <div className='left-part flex flex-col items-start gap-[26px] p-[50px]'>
             <h3 className='text-3xl'>Let’s make things happen</h3>
             <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
             <Button className='w-[218px]' title='Get your free proposal' bgColor='var(--Dark,#191A23)' text='white'></Button>

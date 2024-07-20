@@ -44,7 +44,7 @@ export default function MainPage(){
                 <Button title='Request a quote' borderColor='var(--Dark,#191A23)'></Button>
             </ul>
         </nav>
-        <button className='lg:hidden h-[16px] w-[24px]' onClick={()=> setIsopen(true)}>
+        <button className='menu lg:hidden h-[16px] w-[24px]' onClick={()=> setIsopen(true)}>
             <img src={burgerMenu} alt="" />
         </button>
     </header>

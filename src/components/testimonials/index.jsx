@@ -29,11 +29,11 @@ export default function Testimonials(){
         },
         {
             counter:5
-        }
+        },
     ];
     let sliderRef = useRef(null);
     let sliderRef2 = useRef(null);
-    const [count , setCount] = useState(1);
+    const [count , setCount] = useState(2);
 
     const next = () => {
       sliderRef.slickNext();
@@ -41,6 +41,7 @@ export default function Testimonials(){
       if(count >= 5){
         setCount(5)
     }
+    console.log(count)
     };
     const previous = () => {
       sliderRef.slickPrev();
@@ -48,6 +49,7 @@ export default function Testimonials(){
       if (count <= 1){
         setCount(1)
     }
+    console.log(count)
     };
     const next2 = () => {
         sliderRef2.slickNext();
@@ -63,6 +65,7 @@ export default function Testimonials(){
         if (count <= 1) {
             setCount(1);
           }
+          console.log(count)
     };
 
 
@@ -73,6 +76,8 @@ export default function Testimonials(){
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
+        initialSlide: 1,
+        arrows: false
     };
     
       const settings_2 = {
@@ -80,15 +85,17 @@ export default function Testimonials(){
         infinite: false,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        initialSlide: 1,
+        arrows: false
       };
 
 
     return(
         <div>
         <div className='flex justify-start items-center w-full pb-[85px] text-md gap-[45px] flex-col md:flex-row'>
-            <img className='w-[241px]' src={mainHead} alt="" />
-            <p className='text-[18px] text-center'>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
+            <img className='w-[241px] h-[51px]' src={mainHead} alt="" />
+            <p className='text-[18px] text-center lg:text-left lg:w-[473px]'>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
         </div>
             <div className='pt-[84px] pb-[68px] border rounded-[45px] bg-[var(--Dark,#191A23)] md:block hidden'>
             <Slider
@@ -102,7 +109,7 @@ export default function Testimonials(){
                 <div className="tooltip pt-[48px] pb-[52px] px-[52px]">
                 We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
                 </div>
-                <div className='flex self-center flex-col pl-[100px] pt-[40px]'>
+                <div className='flex self-center flex-col pl-[90px] pt-[40px]'>
                     <h4 className='font-spaceGrotesk font-medium text-[var(--Green,#B9FF66)]'>John mdith</h4>
                     <p className='text-white'>Marketing Director at XYZ Corp</p>
                 </div>
@@ -110,7 +117,7 @@ export default function Testimonials(){
             </div>
                 ))}
                 </Slider>
-                <div className='flex justify-between items-center pt-[125px] px-[20px]'>
+                <div className='flex justify-between items-center pt-[125px] px-[20px] w-[564px] m-auto'>
                 {count==1 ? <img src={leftArrowBlock} onClick={previous} alt="" /> : <img src={leftArrow} onClick={previous} alt="" />}
                     <div className='flex w-full items-center justify-center gap-[10px]'>
                         { count <= 1 ? <img src={loadBlack}/> : <img src={loadWhite}/> }
@@ -125,7 +132,7 @@ export default function Testimonials(){
             </div>
 
 
-            <div className='pt-[84px] pb-[68px] border rounded-[45px] bg-[var(--Dark,#191A23)] block md:hidden'>
+            <div className='pt-[30px] pb-[60px] px-[30px] border rounded-[45px] bg-[var(--Dark,#191A23)] block md:hidden'>
             <Slider
             ref={slider => {
             sliderRef2 = slider;
@@ -135,10 +142,10 @@ export default function Testimonials(){
                 {data.map((d)=>(
             <div className='flex flex-col flex-end justify-center items-center' key={d.count}>
                
-                <div className="tooltip pt-[48px] pb-[52px] px-[52px]">
+                <div className="tooltip pt-[30px] pb-[32.38px] px-[30px]">
                 We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
                 </div>
-                <div className='flex self-center flex-col pl-[100px] pt-[40px]'>
+                <div className='flex flex-col pl-[60px] pt-[40px]'>
                     <h4 className='font-spaceGrotesk font-medium text-[var(--Green,#B9FF66)]'>John mdith</h4>
                     <p className='text-white'>Marketing Director at XYZ Corp</p>
                 </div>
@@ -146,7 +153,7 @@ export default function Testimonials(){
             </div>
                 ))}
                 </Slider>
-                <div className='flex justify-between items-center pt-[125px] px-[20px]'>
+                <div className='flex justify-between items-center pt-[125px] px-[20px] w-[330px] m-auto'>
                 {count==1 ? <img src={leftArrowBlock} onClick={previous2} alt="" /> : <img src={leftArrow} onClick={previous2} alt="" />}
                     <div className='flex w-full items-center justify-center gap-[10px]'>
                         { count <= 1 ? <img src={loadBlack}/> : <img src={loadWhite}/> }

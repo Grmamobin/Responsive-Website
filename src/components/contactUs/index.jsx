@@ -14,11 +14,11 @@ export default function CotactUs(){
     return(
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
-        <img className='w-[241px]' src={mainHead} alt="" />
-        <p className='text-[18px] text-center'>Connect with Us: Lets Discuss Your Digital Marketing Needs</p>
+        <img className='w-[241px] h-[51px]' src={mainHead} alt="" />
+        <p className='text-[18px] text-center lg:text-left lg:w-[323px]'>Connect with Us: Lets Discuss Your Digital Marketing Needs</p>
     </div> 
 
-    <div className='lg:flex py-[40px] px-[30px] lg:pt-[60px]  lg:pb-[80px] lg:pl-[100px] items-start lg:gap-[10px] gap-[36px] lg:flex-shrink-0 border rounded-[45px] bg-[var(--Grey,#F3F3F3)]'>
+    <div className='lg:flex py-[40px] px-[30px] lg:pt-[60px]  lg:pb-[80px] lg:pl-[100px] items-start lg:gap-[10px] gap-[36px] lg:flex-shrink-0 border rounded-[45px] bg-[var(--Grey,#F3F3F3)] lg:px-0'>
         <div className='flex flex-col gap-[40px]'>
             <div className='flex items-start gap-[35px] self-center lg:self-auto'>
                 <div className='flex gap-[14px]'>
@@ -51,6 +51,7 @@ export default function CotactUs(){
                         aria-label="empty textarea"
                         minRows={6}
                         maxRows={6}
+                        style={{resize: 'none'}}
                         placeholder="Message"
                         />
                 </div>
@@ -58,7 +59,7 @@ export default function CotactUs(){
             <Button title='Send Message' bgColor='var(--Dark,#191A23)' text='white' justify='justify-center' borderColor='none' self_width='w-full'></Button>
         </div>
 
-            <img className='w-[400.859px] h-[648px] ml-auto lg:block hidden object-contain' src={img} alt="" />
+            <img className='w-[400.859px] h-[648px] ml-auto gap-0 lg:block hidden ' src={img} alt="" />
 
     </div>
 

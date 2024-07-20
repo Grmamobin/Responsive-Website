@@ -3,9 +3,36 @@ import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import close from '../../assets/images/icon-close.svg'
 export default function Sidebar({isOpen , setIsOpen}){
+
     useEffect(() => {
-        document.body.style.overflow = isOpen ? 'hidden' : 'auto';
-    }, [isOpen]);
+        function handleClickOutside(event) {
+            if(isOpen){
+                if (event.target.closest('.whole-page')) {
+                    console.log('whole')
+                    if(event.target.closest('aside')){
+                        setIsOpen(true);
+                        console.log('hi')
+                        return;
+                    }
+                    if(event.target.closest('.whole-page .menu')){
+                        console.log('hi2')
+                        setIsOpen(true);
+                    }
+                    else{
+                        console.log('hi3')
+                        setIsOpen(false);
+                    }
+
+                }
+            }
+          }
+        document.addEventListener('click', handleClickOutside);
+    
+        return () => {
+          document.removeEventListener('click', handleClickOutside);
+        };
+      }, [isOpen, setIsOpen]);
+
     return(
         <>
         <div className='lg:hidden bg-black/50 fixed flex justify-end bottom-0 top-0 left-0 right-0' style={{visibility: isOpen ? "visible" : "hidden"}}>
@@ -14,7 +41,7 @@ export default function Sidebar({isOpen , setIsOpen}){
                 <img src={close} alt="closeBtn" />
             </button>
         <nav>
-            <ul className='flex flex-col items-center justify-center'>
+            <ul className='flex flex-col items-end justify-end px-[20px]'>
                 <li className='mb-[30px]'>
                 <a href="#">About us</a>
                 </li>
