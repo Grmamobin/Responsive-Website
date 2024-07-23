@@ -29,7 +29,7 @@ export default function Testimonials(){
         },
         {
             counter:5
-        },
+        }
     ];
     let sliderRef = useRef(null);
     let sliderRef2 = useRef(null);
@@ -105,7 +105,7 @@ export default function Testimonials(){
             {...settings}
             >
                 {data.map((d)=>(
-            <div className='flex flex-col flex-end gap-[20px]' key={d.image}>
+            <div className='flex flex-col flex-end gap-[20px]' key={d.counter}>
                 <div className="tooltip pt-[48px] pb-[52px] px-[52px]">
                 We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
                 </div>
@@ -140,9 +140,9 @@ export default function Testimonials(){
             {...settings_2}
             >
                 {data.map((d)=>(
-            <div className='flex flex-col flex-end justify-center items-center' key={d.count}>
+            <div className='flex flex-col flex-end justify-center items-center' key={d.counter}>
                
-                <div className="tooltip pt-[30px] pb-[32.38px] px-[30px]">
+                <div className="tooltip pt-[30px] pb-[32.38px] px-[30px] text-base h-[303px] w-[303px]">
                 We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
                 </div>
                 <div className='flex flex-col pl-[60px] pt-[40px]'>
@@ -153,7 +153,7 @@ export default function Testimonials(){
             </div>
                 ))}
                 </Slider>
-                <div className='flex justify-between items-center pt-[125px] px-[20px] w-[330px] m-auto'>
+                <div className='flex justify-between items-center pt-[60px] px-[30px]'>
                 {count==1 ? <img src={leftArrowBlock} onClick={previous2} alt="" /> : <img src={leftArrow} onClick={previous2} alt="" />}
                     <div className='flex w-full items-center justify-center gap-[10px]'>
                         { count <= 1 ? <img src={loadBlack}/> : <img src={loadWhite}/> }

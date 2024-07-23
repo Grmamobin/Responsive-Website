@@ -15,9 +15,6 @@ export default {
   },
   plugins: [],
   screens:{
-    'sm': '640px',
-    'lg':	'1024px',
-    'md': '1280px'
   }
 }
 

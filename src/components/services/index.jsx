@@ -25,27 +25,27 @@ import img_label from './../../assets/images/Frame 19.png';
 export default function Services(){
     return(
     <>
-    <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
+    <div className='flex justify-start items-center w-full pb-[85px] text-md gap-[45px] flex-col md:flex-row'>
         <img className='w-[164px] h-[51px]' src={Mainhead} alt="" />
-        <p className='text-[18px] text-center lg:text-left lg:w-[580px]'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+        <p className='text-[18px] text-center md:text-left md:w-[580px]'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
 
     <div className='flex flex-col gap-[40px]'>
-        <div className='flex lg:flex-row flex-col gap-[40px]'>
+        <div className='flex md:flex-row flex-col gap-[40px]'>
 
             <Card label_Card={label_card1} arrow_label={arrow_black} img_Card={nameplace1}  bg_color='bg-[var(--Grey,#F3F3F3)]'></Card>
             <Card label_Card={label_card2} arrow_label={arrow_black} img_Card={nameplace2}  bg_color='bg-[var(--Green,#B9FF66)]'></Card>
         
         </div>
 
-        <div className='flex gap-[40px] lg:flex-row flex-col'>
+        <div className='flex gap-[40px] md:flex-row flex-col'>
 
             <Card label_Card={label_card3} arrow_label={arrow_white} img_Card={nameplace3}  bg_color='bg-[var(--Dark,#191A23)]' color="text-white"></Card>
             <Card label_Card={label_card4} arrow_label={arrow_black} img_Card={nameplace4}  bg_color='bg-[var(--Grey,#F3F3F3)]'></Card>
 
         </div>
 
-        <div className='flex gap-[40px] lg:flex-row flex-col'>
+        <div className='flex gap-[40px] md:flex-row flex-col'>
 
             <Card label_Card={label_card5} arrow_label={arrow_black} img_Card={nameplace5}  bg_color='bg-[var(--Green,#B9FF66)]'></Card>
             <Card label_Card={label_card6} arrow_label={arrow_white} img_Card={nameplace6}  bg_color='bg-[var(--Dark,#191A23)]' color="text-white"></Card>
@@ -53,7 +53,7 @@ export default function Services(){
         </div>
     </div>
 
-    <div className='flex w-full h-[347px] lg:pr-[60px] lg:pl-[60px] items-center gap-[275px] border rounded-[45px] bg-[var(--Grey,#F3F3F3)] mt-[85px] '>
+    <div className='flex w-full lg:pr-[60px] lg:pl-[60px] items-center justify-between border rounded-[45px] bg-[var(--Grey,#F3F3F3)] mt-[85px] '>
         <div className='left-part flex flex-col items-start gap-[26px] p-[50px]'>
             <h3 className='text-3xl'>Let’s make things happen</h3>
             <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
@@ -62,7 +62,7 @@ export default function Services(){
         </div>
 
         <div className='right-part hidden lg:flex'>
-            <img className='h-[394px] w-[1000px]'  src={img_label} alt="" />
+            <img className='h-[350px] w-[900px] object-fill'  src={img_label} alt="" />
         </div>
 
     </div>

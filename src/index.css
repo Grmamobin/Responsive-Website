@@ -29,16 +29,7 @@ body {
 }
 * {
   font-family: spaceGrotesk;
-  font-weight: 700;
-}
-ul {
-  list-style-type: none;
-}
-li a {
-  text-decoration: none;
-}
-button {
-  cursor: pointer;
+  font-weight: 400;
 }
 @media screen and (max-width: 1250px) {
   body {

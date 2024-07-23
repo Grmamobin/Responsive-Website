@@ -39,9 +39,9 @@ export default function CaseStudies(){
 
     <div className='hidden lg:flex items-start gap-[64px] border rounded-[45px] bg-[var(--Dark,#191A23)] py-[70px] px-[60px] w-full'>
 
-    {case_studies.map((part) =>{
+    {case_studies.map((part , index) =>{
               return(
-                <div className='flex gap-[64px]' key={part.info}>
+                <div className={`flex ${index==2? 'gap-0': 'gap-[64px]'} `} key={part.info}>
               <div className='flex flex-col items-start gap-[20px]'>
                 <div className='text-white w-full'>{part.info}</div>
                 
@@ -68,9 +68,9 @@ export default function CaseStudies(){
     <Slider
     {...settings}
      className=' lg:hidden h-[300px]'>
-    {case_studies.map((parts) =>(
+    {case_studies.map((parts , index) =>(
       <div className='swap flex flex-col lg:hidden gap-[20px]' key={parts.info}>
-    <div className='flex flex-col py-[42px] px-[50px] items-start gap-[20px] border rounded-[45px] bg-[var(--Dark,#191A23)] text-white w-[350px]' >
+    <div className={`flex flex-col py-[42px] px-[50px] items-start gap-[20px] border rounded-[45px] bg-[var(--Dark,#191A23)] text-white w-[350px] ${index === 0 ? 'gap-[40px]' : 'gap-[20px]'}`} >
       <div>{parts.info}</div>
       <div className='flex items-start justify-start gap-[15px] w-[250px]'>
           <ul>

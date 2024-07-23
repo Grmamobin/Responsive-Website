@@ -4,7 +4,7 @@ export default function Card({label_Card , img_Card , arrow_label , bg_color , c
     return(
     <>
 
-    <div className={`flex rounded-[45px] border border-[var(--Dark,#191A23)]  shadow-[0px_5px_0px_0px_#191A23] p-[50px] items-center justify-between w-full ${bg_color}`}>
+    <div className={`lg:flex hidden rounded-[45px] border border-[var(--Dark,#191A23)]  shadow-[0px_5px_0px_0px_#191A23] p-[50px] items-center justify-between w-full ${bg_color}`}>
     <div className='left-part flex flex-col justify-center items-start gap-[93px]'>
         <img src={`${label_Card}`} alt="" />
         <div className='flex items-center justify-center gap-[15px]'>
@@ -20,6 +20,17 @@ export default function Card({label_Card , img_Card , arrow_label , bg_color , c
     </div>
     <div className="right-part">
         <img src= {`${img_Card}`} alt="" />
+    </div>
+    </div>
+
+
+    <div className={`lg:hidden rounded-[45px] border border-[var(--Dark,#191A23)]  shadow-[0px_5px_0px_0px_#191A23] p-[50px] items-center justify-between w-full ${bg_color}`}>
+    <div className='left-part flex flex-col gap-[27px] items-start'>
+        <img src={`${label_Card}`} alt="" />   
+        <div className="right-part flex items-end justify-center gap-[84px]">
+            <img src={`${arrow_label}`} alt="" />
+            <img src= {`${img_Card}`} alt="" />
+        </div>
     </div>
     </div>
     </>
