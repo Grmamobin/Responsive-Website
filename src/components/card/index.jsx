@@ -19,7 +19,7 @@ export default function Card({label_Card , img_Card , arrow_label , bg_color , c
         </div>
     </div>
     <div className="right-part">
-        <img src= {`${img_Card}`} alt="" />
+        <img className='w-[210px] h-[147px]' src= {`${img_Card}`} alt="" />
     </div>
     </div>
 
@@ -27,9 +27,9 @@ export default function Card({label_Card , img_Card , arrow_label , bg_color , c
     <div className={`lg:hidden rounded-[45px] border border-[var(--Dark,#191A23)]  shadow-[0px_5px_0px_0px_#191A23] p-[50px] items-center justify-between w-full ${bg_color}`}>
     <div className='left-part flex flex-col gap-[27px] items-start'>
         <img src={`${label_Card}`} alt="" />   
-        <div className="right-part flex items-end justify-center gap-[84px]">
+        <div className="right-part flex items-end justify-between w-full">
             <img src={`${arrow_label}`} alt="" />
-            <img src= {`${img_Card}`} alt="" />
+            <img className='w-[165px] h-[129px]' src= {`${img_Card}`} alt="" />
         </div>
     </div>
     </div>

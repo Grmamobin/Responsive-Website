@@ -6,7 +6,7 @@ export default function TeamCard({name , job , info , pic }){
     <>
     <div className='flex w-full pt-[40px] pr-[35px] pl-[35px] pb-[40px] flex-col items-start gap-[10px] rounded-[45px] border border-[#191A23] bg-white shadow-[0px_5px_0px_0px_#191A23]'>
         <div className='flex flex-col items-start gap-[28px]'>
-        <div className='flex flex-3 items-end  gap-[20px]'>
+        <div className='flex lg:gap-[20px] justify-between w-full'>
             <div className='flex flex-3 items-end  gap-[20px]'>
                 <img className='w-[97.823px] h-[97.823px]' src={pic} alt="" />
                 <div>

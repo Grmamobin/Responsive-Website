@@ -132,7 +132,7 @@ export default function Testimonials(){
             </div>
 
 
-            <div className='pt-[30px] pb-[60px] px-[30px] border rounded-[45px] bg-[var(--Dark,#191A23)] block md:hidden'>
+            <div className='pt-[30px] pb-[60px] px-[20px] border rounded-[45px] bg-[var(--Dark,#191A23)] block md:hidden'>
             <Slider
             ref={slider => {
             sliderRef2 = slider;
@@ -140,12 +140,12 @@ export default function Testimonials(){
             {...settings_2}
             >
                 {data.map((d)=>(
-            <div className='flex flex-col flex-end justify-center items-center' key={d.counter}>
+            <div className='flex flex-col flex-end justify-start items-center' key={d.counter}>
                
-                <div className="tooltip pt-[30px] pb-[32.38px] px-[30px] text-base h-[303px] w-[303px]">
+                <div className="tooltip pt-[30px] pb-[32.38px] px-[30px] text-base ">
                 We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
                 </div>
-                <div className='flex flex-col pl-[60px] pt-[40px]'>
+                <div className='flex flex-col justify-start pl-[65px] pt-[40px]'>
                     <h4 className='font-spaceGrotesk font-medium text-[var(--Green,#B9FF66)]'>John mdith</h4>
                     <p className='text-white'>Marketing Director at XYZ Corp</p>
                 </div>

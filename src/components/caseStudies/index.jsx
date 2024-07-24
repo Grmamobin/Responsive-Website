@@ -26,8 +26,6 @@ export default function CaseStudies(){
     centerMode: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true,
-    initialSlide: 0,
     arrows: false
 };
     return(
@@ -67,10 +65,10 @@ export default function CaseStudies(){
   
     <Slider
     {...settings}
-     className=' lg:hidden h-[300px]'>
-    {case_studies.map((parts , index) =>(
-      <div className='swap flex flex-col lg:hidden gap-[20px]' key={parts.info}>
-    <div className={`flex flex-col py-[42px] px-[50px] items-start gap-[20px] border rounded-[45px] bg-[var(--Dark,#191A23)] text-white w-[350px] ${index === 0 ? 'gap-[40px]' : 'gap-[20px]'}`} >
+     className=' lg:hidden'>
+    {case_studies.map((parts) =>(
+      <div className='swap flex flex-row lg:hidden gap-[20px]' key={parts.info}>
+    <div className={`flex flex-col py-[42px] px-[50px] items-start  border rounded-[45px] bg-[var(--Dark,#191A23)] text-white  gap-[40px] h-[287px]`} >
       <div>{parts.info}</div>
       <div className='flex items-start justify-start gap-[15px] w-[250px]'>
           <ul>

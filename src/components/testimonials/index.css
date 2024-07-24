@@ -1,10 +1,9 @@
-.slick-slide > div {
-  margin: 0 10px;
-}
 .tooltip {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   /* height: 10rem; */
+  width: 606px;
+  max-width: 100%;
 }
 .tooltip {
   --a: 90deg;
