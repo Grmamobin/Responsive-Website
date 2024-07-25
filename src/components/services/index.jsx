@@ -57,12 +57,12 @@ export default function Services(){
         <div className='left-part flex flex-col items-start gap-[26px] p-[50px]'>
             <h3 className='text-3xl'>Let’s make things happen</h3>
             <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-            <Button className='w-[218px]' title='Get your free proposal' bgColor='var(--Dark,#191A23)' text='white'></Button>
+            <Button className='w-[218px]' title='Get your free proposal' classN='text-[white] bg-[var(--Dark,#191A23)]'></Button>
             
         </div>
 
         <div className='right-part hidden lg:flex'>
-            <img className='h-[350px] w-[900px] object-fill'  src={img_label} alt="" />
+            <img className='w-[900px] object-fill'  src={img_label} alt="" />
         </div>
 
     </div>

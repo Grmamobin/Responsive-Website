@@ -41,7 +41,7 @@ export default function MainPage(){
                 <li>
                     <a href="#">Blog</a>
                 </li>
-                <Button title='Request a quote' borderColor='var(--Dark,#191A23)'></Button>
+                <Button title='Request a quote' classN='border-[var(--Dark,#191A23)]'></Button>
             </ul>
         </nav>
         <button className='menu lg:hidden h-[16px] w-[24px]' onClick={()=> setIsopen(true)}>
@@ -59,11 +59,11 @@ export default function MainPage(){
             </div>
             <p className='w-full text-lg pt-[35px]'>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
             <div className='pt-[35px] flex justify-center items-center lg:items-start lg:justify-start lg:pb-[70px]'>
-                <Button title='Book a consultation' bgColor='var(--Dark,#191A23)' text='white' self_width='w-full lg:w-[264px]' justify='justify-center'></Button>
+                <Button title='Book a consultation' classN='bg-[var(--Dark,#191A23)] justify-center w-full lg:w-[264px] text-[white]'></Button>
             </div>
         </div>
         <div className="middle-right lg:flex hidden w-full">
-            <img className='mainImg w-full'  src={mainImg} alt="" />
+            <img className='mainImg w-full max-w-[715px]'  src={mainImg} alt="" />
         </div>
     </section>
     <div className='whole-swap hidden lg:flex justify-between overflow-hidden pt-6'>

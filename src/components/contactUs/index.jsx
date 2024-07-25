@@ -7,10 +7,11 @@ import radioBtn from '../../assets/images/Radiobutton.svg'
 import img from '../../assets/images/Screenshot 2024-07-13 at 16.54.19.png'
 
 export default function CotactUs(){
-    const [radioButton , setRadioButton] = useState({
-        1: false,
-        2: true
-    });
+    const [selectedOption, setSelectedOption] = useState(2);
+
+    const handleChange = (event) => {
+        setSelectedOption(Number(event.target.value));
+    };
     return(
     <>
     <div className='flex justify-start items-center w-full pb-[85px] text-lg gap-[45px] flex-col lg:flex-row'>
@@ -20,22 +21,42 @@ export default function CotactUs(){
 
     <div className='lg:flex py-[40px] px-[30px] lg:pt-[60px]  lg:pb-[80px] lg:pl-[100px] items-start lg:gap-[10px] gap-[36px] lg:flex-shrink-0 border rounded-[45px] bg-[var(--Grey,#F3F3F3)] lg:px-0'>
         <div className='flex flex-col gap-[40px]'>
-            <div className='flex items-start gap-[35px] self-center lg:self-auto'>
-                <div className='flex gap-[14px]'>
-                    <div >
-                        <div className='w-[28px] h-[28px] border rounded-[29px] bg-white border-black' style={{display: radioButton[2]? "none" : "flex"}} onClick={()=>{setRadioButton({1: false, 2: true})}}></div>
-                        <img style={{display: radioButton[2]? "flex" : "none"}} onClick={()=>{setRadioButton({1: false, 2: true})}} className='w-[28px] h-[28px]' src={radioBtn} alt="" />
-                    </div>
-                    <p>Say Hi</p>
-                </div>
-                <div className='flex gap-[14px]'>
-                <div>
-                        <div className='w-[28px] h-[28px] border rounded-[29px] bg-white border-black' style={{display: radioButton[1]? "none" : "flex"}} onClick={()=>{setRadioButton({1: true, 2: false})}}></div>
-                        <img style={{display: radioButton[1]? "flex" : "none"}} onClick={()=>{setRadioButton({1: true, 2: false})}} className='w-[28px] h-[28px]' src={radioBtn} alt="" />
-                    </div>
-                    <p>Get a Quote</p>
-                </div>
+
+        <div className='flex items-start gap-[35px] self-center lg:self-auto'>
+            <div className='flex gap-[14px] items-center'>
+                <input 
+                    type="radio" 
+                    id="sayHi" 
+                    name="options" 
+                    value={2} 
+                    checked={selectedOption === 2} 
+                    onChange={handleChange} 
+                    className='hidden' 
+                />
+                <label htmlFor="sayHi" className='flex items-center cursor-pointer'>
+                    {selectedOption === 2 && <img className='w-[28px] h-[28px]' src={radioBtn}/> }
+                    {selectedOption === 1 && <div className='w-[28px] h-[28px] border rounded-[29px] bg-white border-black '></div>}
+                    <span className='ml-[14px]'>Say Hi</span>
+                </label>
             </div>
+            <div className='flex gap-[14px] items-center'>
+                <input 
+                    type="radio" 
+                    id="getAQuote" 
+                    name="options" 
+                    value={1} 
+                    checked={selectedOption === 1} 
+                    onChange={handleChange} 
+                    className='hidden' 
+                />
+                <label htmlFor="getAQuote" className='flex items-center cursor-pointer'>
+                {selectedOption === 1 && <img className='w-[28px] h-[28px]' src={radioBtn}/> }
+                {selectedOption === 2 && <div className='w-[28px] h-[28px] border rounded-[29px] bg-white border-black '></div>}
+                    <span className='ml-[14px]'>Get a Quote</span>
+                </label>
+            </div>
+        </div>
+
             <div className='flex flex-col  gap-[25px]'>
                 <div className='flex flex-col items-start gap-[5px]'>
                     <p>Name</p>
@@ -56,7 +77,7 @@ export default function CotactUs(){
                         />
                 </div>
             </div>
-            <Button title='Send Message' bgColor='var(--Dark,#191A23)' text='white' justify='justify-center' borderColor='none' self_width='w-full'></Button>
+            <Button title='Send Message' classN='w-full border-[none] text-[white] justify-center bg-[var(--Dark,#191A23)] '></Button>
         </div>
 
             <img className='w-[400.859px] h-[648px] ml-auto gap-0 lg:block hidden ' src={img} alt="" />

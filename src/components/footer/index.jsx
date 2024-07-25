@@ -45,7 +45,7 @@ export default function Footer(){
                 </div>
                 <div className='flex lg:flex-row flex-col lg:py-[58px] lg:px-[40px] p-[30px] items-start gap-[20px] border rounded-[14px] bg-[#292A32] border-none text-black h-full'>
                     <input className='flex w-full py-[22px] px-[35px] items-start gap-[10px] rounded-[14px] border border-white bg-[#292A32] text-white' type="email" placeholder='Email' />
-                    <Button title='Subscribe to news' bgColor='var(--Green,#B9FF66)' borderColor='var(--Green,#B9FF66)' self_width='w-full border-[#B9FF66]' justify='justify-center'></Button>
+                    <Button title='Subscribe to news' classN='bg-[var(--Green,#B9FF66)] border-[var(--Green,#B9FF66)] justify-center w-full border-[#B9FF66] '></Button>
                 </div>
             </div>
         </div>

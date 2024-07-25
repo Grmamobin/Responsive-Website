@@ -43,7 +43,7 @@ export default function Team(){
     </div>
     
     <div className='flex pt-[40px] justify-end items-end'>
-    <Button title='See all team' bgColor='var(--Dark,#191A23)' text='white' justify='justify-center' self_width='lg:w-[269px] w-full'></Button>
+    <Button title='See all team' classN='lg:w-[269px] w-full justify-center text-[white] bg-[var(--Dark,#191A23)]'></Button>
     </div>
     </>
 )
